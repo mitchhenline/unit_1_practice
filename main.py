@@ -37,5 +37,6 @@ mountainwest = {'usu':"aggies", "bsu":"broncos","wyoming":"cowboys"}
 # print(mountainwest.values())
 
 with open('myfile.txt') as myfile:
-    contents = myfile.readlines()[25]
-    print(contents)
+    content = myfile.readlines()[25]
+    with open('favline.txt', mode ='w') as favline:
+        writeit = favline.write(content)
