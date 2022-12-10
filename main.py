@@ -36,6 +36,6 @@ mountainwest = {'usu':"aggies", "bsu":"broncos","wyoming":"cowboys"}
 
 # print(mountainwest.values())
 
-myfile = open('myfile.txt')
-
-print(myfile.read())
+with open('myfile.txt') as myfile:
+    contents = myfile.readlines()[25]
+    print(contents)
